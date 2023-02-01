@@ -4,10 +4,10 @@ const runTimer = function () {
     startValue.textContent--;
 
     if(startValue.textContent < 0) {
-        clearInterval();
+        clearInterval(id);
         alert('Вы победили в конкурсе!');   
     }
 }
 
-setInterval(runTimer, 1000);
+let id = setInterval(runTimer, 1000);
 
