@@ -6,11 +6,11 @@ let nextArrow = document.querySelector('.slider__arrow_next');
 let activeSlide = 0;
 
 function hideSlide() {
-    slides[activeSlide].classList.remove = 'slider__item_active';
+    slides[activeSlide].classList.remove('slider__item_active');
 }
 
 function activateSlide() {
-    slides[activeSlide].classList.add = 'slider__item_active';
+    slides[activeSlide].classList.add('slider__item_active');
 }
 
 nextArrow.onclick = () => {

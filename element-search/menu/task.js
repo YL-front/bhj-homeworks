@@ -11,16 +11,16 @@ function activateMenu() {
 };
 
 for (let i = 0; i < menuItems.length; i++) {
-   menuItems[i].closest('li').onclick = (event) => {
-        event.preventDefault();
+   menuItems[i].closest('li').onclick = () => {
 
         if (menuItems[i].classList.contains('menu_active')) {
             closeMenu();
             return;
         } else if (activateMenu()) {
             closeMenu();
-        };
+        }
         
         menuItems[i].classList.add('menu_active');
+        return false;
     }
 };
