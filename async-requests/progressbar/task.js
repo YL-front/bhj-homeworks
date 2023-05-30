@@ -7,7 +7,9 @@ selectBtn.addEventListener('click', () => {
   progress.setAttribute('value', 0);
 });
 
-send.addEventListener('click', () => {
+send.addEventListener('click', (e) => {
+  e.preventDefault();
+
   const file = document.querySelector('.input__wrapper-desc');
 
   if (file.textContent) {
